@@ -39,3 +39,18 @@ console.log(typeof year);
 
 // will show the object as type for null which is a bug/error in javascript since long
 console.log(typeof null);
+
+// variable
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+// cannot reassing the value in case of const
+// birthYear = 2003;
+
+var job = "Programmer";
+job = "Coder";
+
+// can use variable without declaration but it will be in global scope
+lastName = "Parmar";
+console.log(lastName);

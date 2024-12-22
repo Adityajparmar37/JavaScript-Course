@@ -68,6 +68,7 @@ const myFirstName = "Aditya";
 const myLastName = "Parmar";
 console.log(myFirstName + " " + myLastName);
 
+// assigmenet operator
 let x = 10 + 5;
 x += 10;
 x *= 4;
@@ -76,6 +77,7 @@ x--;
 --x;
 console.log(x);
 
+// logical operator
 console.log(ageAditya > ageArchita);
 console.log(ageAditya >= 10);
 const isAge = ageAditya <= 10;
@@ -87,3 +89,31 @@ console.log(y, z);
 
 const avgAge = (ageAditya + ageArchita) / 2;
 console.log(avgAge);
+
+//string literals
+const birth_year = 2003;
+
+const without_string_literals =
+  "I'm" +
+  myFirstName +
+  " , a " +
+  (now - birth_year) +
+  " year old " +
+  job +
+  " !";
+console.log(without_string_literals);
+
+const with_String_literals = `I'm ${myFirstName}, a ${
+  now - birth_year
+} year old ${job} !`;
+console.log(with_String_literals);
+
+console.log(
+  "Multiline string\n\
+without string\n\
+literals"
+);
+
+console.log(`Multiline string
+with string
+literals`);

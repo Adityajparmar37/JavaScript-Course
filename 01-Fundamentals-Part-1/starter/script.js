@@ -54,3 +54,36 @@ job = "Coder";
 // can use variable without declaration but it will be in global scope
 lastName = "Parmar";
 console.log(lastName);
+
+//operators
+
+//math operators
+const now = 2024;
+const ageAditya = now - 2000;
+const ageArchita = now - 2009;
+console.log(ageAditya, ageArchita);
+console.log(2 ** 4);
+
+const myFirstName = "Aditya";
+const myLastName = "Parmar";
+console.log(myFirstName + " " + myLastName);
+
+let x = 10 + 5;
+x += 10;
+x *= 4;
+x /= 4;
+x--;
+--x;
+console.log(x);
+
+console.log(ageAditya > ageArchita);
+console.log(ageAditya >= 10);
+const isAge = ageAditya <= 10;
+console.log(isAge);
+
+let y, z;
+y = z = 20 - 10 - 5;
+console.log(y, z);
+
+const avgAge = (ageAditya + ageArchita) / 2;
+console.log(avgAge);

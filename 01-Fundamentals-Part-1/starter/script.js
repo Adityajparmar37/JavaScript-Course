@@ -188,3 +188,49 @@ if (num === 18) console.log("You Just became adult: (strict)");
 if (num == 18) console.log("you just became adult: (loose)");
 
 if (num !== 18) console.log("not a 18");
+
+//logical operator
+const hasDriversLicense = false;
+const hasGoodVision = true;
+const isTired = false;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+console.log(!hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || !hasGoodVision);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Aditya can drive");
+} else {
+  console.log("Aditya cannot drive");
+}
+
+const day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("Plan Course Structure");
+    console.log("Go to coding meetup");
+    break;
+
+  case "tuesday":
+    console.log("Preapre theory videos");
+    break;
+
+  case "wednesday":
+  case "thrusday":
+    console.log("Write code examples");
+    break;
+
+  case "friday":
+    console.log("Record Videos");
+    break;
+
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekends");
+    break;
+  default:
+    console.log("Not a valid day");
+}

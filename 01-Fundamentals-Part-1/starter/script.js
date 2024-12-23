@@ -234,3 +234,8 @@ switch (day) {
   default:
     console.log("Not a valid day");
 }
+
+const myAge = 23;
+
+const drink = myAge >= 18 ? "wine" : "water";
+console.log(drink);

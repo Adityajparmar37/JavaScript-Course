@@ -150,3 +150,28 @@ console.log("23" - "10" - 3);
 console.log("23" + "10" - 3);
 console.log("24" / 2);
 console.log("24" * 3);
+
+// falsy and turthy values
+
+//falsy value => 0 , '', undefined, null , NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Aditya"));
+console.log(Boolean({})); // true
+console.log(Boolean(""));
+
+const money = 0;
+if (money) console.log("Don't spend it all");
+else {
+  console.log("You Should get a job");
+}
+
+let height; // height will automatically convert into Boolean by type coersion
+
+//undeinfed is a falsy value
+if (height) {
+  console.log("Height is defined");
+} else {
+  console.log("Height is Undefined");
+}

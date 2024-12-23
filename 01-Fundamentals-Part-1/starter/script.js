@@ -117,3 +117,36 @@ literals"
 console.log(`Multiline string
 with string
 literals`);
+
+// conditional Statement
+
+const yourAge = 20;
+if (yourAge >= 18) {
+  console.log("adult");
+} else if (yourAge >= 60) {
+  console.log("citizen");
+} else {
+  console.log("teenage");
+}
+
+// type conversion
+
+//1) manually type conversion
+
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Aditya"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//2) type coersion automatillay
+console.log("I 'am " + 21 + " years old");
+// only + will concate to string , rest math operator will be work as calculation as they are even if it(any number) is a string
+
+console.log("23" - "10" - 3);
+console.log("23" + "10" - 3);
+console.log("24" / 2);
+console.log("24" * 3);

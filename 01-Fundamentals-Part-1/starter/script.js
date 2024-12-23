@@ -175,3 +175,12 @@ if (height) {
 } else {
   console.log("Height is Undefined");
 }
+
+// equality operator
+const num = Number(prompt("Enter a number"));
+
+// by-defualt prompt will return any thing into a string hence need to convert it acc to usecase
+
+if (num === 18) console.log("You Just became adult: (strict)");
+
+if (num == 18) console.log("you just became adult: (loose)");

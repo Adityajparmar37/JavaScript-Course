@@ -177,10 +177,14 @@ if (height) {
 }
 
 // equality operator
-const num = Number(prompt("Enter a number"));
+const num = prompt("Enter a number");
 
 // by-defualt prompt will return any thing into a string hence need to convert it acc to usecase
+
+//const num = Number(prompt("Enter a number"));
 
 if (num === 18) console.log("You Just became adult: (strict)");
 
 if (num == 18) console.log("you just became adult: (loose)");
+
+if (num !== 18) console.log("not a 18");

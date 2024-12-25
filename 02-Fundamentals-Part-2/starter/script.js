@@ -67,3 +67,27 @@ console.log(my);
 const ages = [calAge(years[0]), calAge(years[1]), calAge(years[2])];
 
 console.log(ages);
+
+//array methods
+
+const newLength = friends.push("Bhavik");
+console.log(newLength);
+
+const newLength2 = friends.unshift("Baa");
+console.log(newLength2);
+
+console.log(friends);
+
+// element which will be pop is return by pop() method
+const poppedElement = friends.pop();
+console.log(poppedElement);
+
+//remove from front of array
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf("Mummy"));
+
+friends.push(21);
+console.log(friends.includes("21")); // false
+console.log(friends.includes(21)); // true

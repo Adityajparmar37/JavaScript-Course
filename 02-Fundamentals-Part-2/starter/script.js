@@ -41,3 +41,29 @@ const yearUntilRetirement = (birthYear, name) => {
 };
 
 console.log(yearUntilRetirement(2003, "Aditya"));
+
+// Arrays
+//Arrays is non primitive
+
+//1st way of creating arrays
+const friends = ["Mummy", "Pappa", "Archita"];
+console.log(friends);
+
+//2nd way of creating arrays
+const years = new Array(2000, 2003, 2004, 2005);
+console.log(years);
+
+console.log(friends.length);
+console.log(years[1]);
+console.log(friends[friends.length - 2]);
+
+friends[2] = "Archu";
+
+const firstName = "Aditya";
+const lastName = "Parmar";
+const my = [firstName, lastName, 21, friends];
+console.log(my);
+
+const ages = [calAge(years[0]), calAge(years[1]), calAge(years[2])];
+
+console.log(ages);

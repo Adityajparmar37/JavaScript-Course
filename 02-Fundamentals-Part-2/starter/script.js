@@ -137,3 +137,34 @@ console.log(My);
 
 console.log(My.calcAge());
 console.log(My.age);
+
+const yearsArr = [1991, 2007, 1968, 2022, "2003", 2025, "2009"];
+const agesArr = [];
+
+for (let i = 0; i < yearsArr.length; i++) {
+  if (typeof yearsArr[i] === "string") continue;
+  agesArr.push(2025 - yearsArr[i]);
+}
+console.log(agesArr);
+
+for (let i = 1; i < 4; i++) {
+  console.log(`exercise ${i}`);
+  for (let j = 1; j < 4; j++) {
+    console.log(`times ${j}`);
+  }
+}
+
+let k = 1;
+while (k <= 5) {
+  console.log(`While exercise times ${k}`);
+  k++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You Rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+
+  if (dice == 6) console.log(`Loop end as 6`);
+}

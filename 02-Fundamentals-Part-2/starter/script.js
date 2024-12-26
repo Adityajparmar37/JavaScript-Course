@@ -91,3 +91,49 @@ console.log(friends.indexOf("Mummy"));
 friends.push(21);
 console.log(friends.includes("21")); // false
 console.log(friends.includes(21)); // true
+
+const My = {
+  firstName: "Aditya",
+  lastName: "Parmar",
+  ages: 21,
+  birthYear: 2003,
+  job: "Full Stack Intern",
+  friends: friends,
+  hasDriversLicense: true,
+
+  calcAge: function () {
+    // creating new age property in My object
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+};
+
+console.log(My);
+
+//access object key value in 2 way dot and bracket
+console.log(My.firstName);
+console.log(My["lastName"]);
+
+//difference between both is that bracket takes in expression hence you can compute expression and then give it to e.g
+
+const nameKey = "Name";
+console.log(My["first" + nameKey]);
+console.log(My["last" + nameKey]);
+
+// this is not allow
+// console.log(My."last" + nameKey);
+
+// other differenc is =>
+
+const field = prompt("Enter My field");
+console.log(My[field]);
+//inintal it will log undefine as field is not key in My object hence that in bracket notation will not show
+console.log(My.field);
+
+// add in object
+My.location = "Gujarat";
+My["email"] = "adi@gmail.com";
+console.log(My);
+
+console.log(My.calcAge());
+console.log(My.age);
